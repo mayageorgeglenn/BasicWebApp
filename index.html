@@ -39,6 +39,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var exampleVariable2 = 0;
 	var exampleVariable3 = 0;
 	
+	//addition function
 	function exampleFunction1()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
@@ -50,7 +51,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		alert("You just ran an addition function!");
 		console.log("Addition function was run.");
 	}
-	
+	//multiplication function
 	function exampleFunction2()
 	{
 		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
@@ -62,6 +63,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		console.log("Multiplication function was run.");
 	}
 	
+	//exponent function
 	function exampleFunction3()
 	{
 		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
@@ -72,7 +74,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		alert("You just ran an exponent function!");
 		console.log("Exponent function was run.");
 	}
-	
+	//subtraction function
 	function exampleFunction4()
 	{
 		exampleVariable1= parseFloat(document.getElementById("firstInputBox").value);
@@ -82,7 +84,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		alert("You just ran a subtraction function.");
 	}	
-	
+	//division function 
 	function exampleFunction5()
 	{
 		exampleVariable1= parseFloat(document.getElementById("firstInputBox").value);
@@ -93,13 +95,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		alert("You just ran a division function.");
 	}
 	
-	
+	//tells the reader the answer and calls on the reset function
 	function exampleResultsFunction()
 	{
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
 		resetVariables();
 	}
 	
+	//resets the variables to 0
 	function resetVariables()
 	{
 		exampleVariable1 = 0;
@@ -108,6 +111,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	}
 	
+	//inserts a number of smiley and frowny faces to the alternate page based on the numbers the user inputted
 	function insertImages()
 	{
 		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
@@ -129,6 +133,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		document.getElementById("alternateContentText").innerHTML = "You inserted " + exampleVariable1 + " smiley faces and " + exampleVariable2 + " frowny faces!";
 	}
 	
+	//inserts a number of hearts and broken hearts to the heart page based on the numbers the user inputted
 	function insertHearts()
 	{
 		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
@@ -224,7 +229,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		<br><br><br>
 	</form>
-      
+   <!--CREATES ALL THE BUTTONS AND WHAT FUNCTIONS TO CALL ON WHEN CLICKED-->   
   <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-pink">Add</a>
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-pink">Multiply</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-pink">Exponent</a>
@@ -236,7 +241,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   </center>
 </div>  
   
-<!--ALTERNATE SUBPAGE-->
+<!--ALTERNATE SUBPAGE: for the smiley and frowny faces-->
 
 <div id="alternatepage" class="page">
 	<div id="alternateheader" class="w3-container w3-flat-green-sea">
@@ -253,7 +258,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  </div>
   
 
-<!--HEARTS SUBPAGE-->
+<!--HEARTS SUBPAGE: for the hearts and broken hearts-->
 
 <div id="heartpage" class="page">
 	<div id="heartheader" class="w3-container w3-flat-green-sea">
@@ -276,7 +281,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  
 	  
 	  
-<!--LAST SUBPAGE-->
+<!--LAST SUBPAGE: for the calculator operations-->
 <div id="finalpage" class="page">
 	<div id="finalheader" class="w3-container w3-flat-green-sea">
 		<h1>Results...</h1>
