@@ -83,6 +83,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		alert("You just ran a subtraction function.");
 	}	
 	
+	function exampleFunction5()
+	{
+		exampleVariable1= parseFloat(document.getElementById("firstInputBox").value);
+		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 / exampleVariable2;
+		
+		alert("You just ran a division function.");
+	}
+	
+	
 	function exampleResultsFunction()
 	{
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
@@ -193,6 +204,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Multiply</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Exponent</a>
 <a href="#finalpage" onclick="exampleFunction4();" class="w3-btn w3-grey">Subtract</a> 
+<a href="#finalpage" onclick="exampleFunction5();" class="w3-btn w3-grey">Division</a>
   <a href="#alternatepage" onclick="insertImages();" class="w3-btn w3-grey">Special Button</a>
 	  
     
