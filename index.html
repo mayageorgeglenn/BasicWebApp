@@ -128,6 +128,27 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		}
 		document.getElementById("alternateContentText").innerHTML = "You inserted " + exampleVariable1 + " smiley faces and " + exampleVariable2 + " frowny faces!";
 	}
+	
+	function insertHearts()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		for(let index =0; index < exampleVariable1; index++)
+		{
+			var heart = document.createElement("img");
+			heart.src = "https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png";
+			document.getElementById("contentBox").appendChild(heart);
+			
+		}
+		for(let index2=0; index2<exampleVariable2;index2++)
+		{
+			var broken = document.createElement("img");
+			broken.src = "https://www.freeiconspng.com/uploads/broken-heart-transparent-background-4.png";
+			document.getElementById("contentBox").appendChild(broken);
+		}
+		document.getElementById("alternateContentText").innerHTML = "You inserted " + exampleVariable1 + " hearts and " + exampleVariable2 + " broken hearts!";
+	}
 </script>
   
   
@@ -205,8 +226,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Exponent</a>
 <a href="#finalpage" onclick="exampleFunction4();" class="w3-btn w3-grey">Subtract</a> 
 <a href="#finalpage" onclick="exampleFunction5();" class="w3-btn w3-grey">Division</a>
-  <a href="#alternatepage" onclick="insertImages();" class="w3-btn w3-grey">Special Button</a>
-	  
+  <a href="#alternatepage" onclick="insertImages();" class="w3-btn w3-grey">Smiley Button</a>
+<a href="#heartpage" onclick="insertHearts();" class="w3-btn w3-grey">Heart Button</a> 
     
   </center>
 </div>  
@@ -228,7 +249,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  </div>
   
 
-	  
+<!--HEARTS SUBPAGE-->
+
+<div id="heartpage" class="page">
+	<div id="heartheader" class="w3-container w3-flat-green-sea">
+		<h1>Hearts page</h1>
+	</div>
+	
+	<center>
+		<div id="heartBox" class="w3-container">
+			<p id="heartContentText">Placeholder text!</p>
+		</div>
+		
+		<a href="#content" onclick="resetVariables();" class="w3-btn w3-grey">Return to Home Page</a>
+		</center>
+	  </div>	  
 	  
 	  
 	  
