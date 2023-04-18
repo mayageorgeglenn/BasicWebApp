@@ -24,7 +24,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
   <!--Formatting source information and webpage title.-->
   <head>
-    <title>APP NAME GOES HERE</title>
+    <title>Calculator App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="w3.css">
@@ -72,6 +72,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		alert("You just ran an exponent function!");
 		console.log("Exponent function was run.");
 	}
+	
+	function exampleFunction4()
+	{
+		exampleVariable1= parseFloat(document.getElementById("firstInputBox").value);
+		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 - exampleVariable2;
+		
+		alert("You just ran a subtraction function.");
+	}	
 	
 	function exampleResultsFunction()
 	{
@@ -179,10 +189,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br><br><br>
 	</form>
       
-  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
-  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
-  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
+  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Add</a>
+  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Multiply</a>
+  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Exponent</a>
+<a href="#finalpage" onclick="exampleFunction4();" class="w3-btn w3-grey">Subtract</a> 
   <a href="#alternatepage" onclick="insertImages();" class="w3-btn w3-grey">Special Button</a>
+	  
     
   </center>
 </div>  
@@ -238,7 +250,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   
 <!--Footer!-->
 <footer class="w3-bottom w3-container w3-flat-green-sea">
-	<p>YOUR NAME (or anything you want) HERE</p>
+	<p>by Maya Glen</p>
 </footer>
 </div>
 
